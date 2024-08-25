@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>سراقب للإتصالات</title>
+</head>
+<body>
+        <div class="main">
+            <div class="head">
+                <h2>سراقب للإتصالات</h2>
+                <h4>نظام إدارة منتجات</h4>
+            </div>
+            <div class="input">
+                <input type="text" name="" id="title" placeholder="اسم المنتج">
+                <div class="price">
+                    <input onkeyup="getTotal()" type="number" name="" id="price" placeholder="السعر">
+                    <input onkeyup="getTotal()" type="number" name="" id="taxes" placeholder="المربح">
+                    <input onkeyup="getTotal()" type="number" name="" id="ads" placeholder="الإجمالي">
+                    <input onkeyup="getTotal()" type="number" name="" id="discount" placeholder="الخصم">
+                    <small id="total"></small>
+                </div>
+                <input type="number" name="" id="count" placeholder="الكمية">
+                <input type="text" name="" id="category" placeholder="الصنف">
+                <button id="submit">إضافة</button>
+            </div>
+            <div class="output">
+                <div class="searchBlock">
+                    <input type="search" name="" id="search" placeholder="بحث عن منتج">
+                    <div class="btnSearch">
+                        <button id="searchTitle">البحث من خلال الاسم</button>
+                        <button id="searchCategory">البحث من خلال الصنف</button>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>رمز</th>
+                        <th>اسم المنتج</th>
+                        <th>السعر</th>
+                        <th>المربح</th>
+                        <th>نفقات</th>
+                        <th>الخصم</th>
+                        <th>الإجمالي</th>
+                        <th>الصنف</th>
+                        <th>تعديل</th>
+                        <th>حذف</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>moh</td>
+                            <td>123</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>444</td>
+                            <td>jkn</td>
+                            <td><button id="update">تعديل</button></td>
+                            <td><button id="delete">حذف</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="assets/js/app.js"></script>
+</body>
+</html>
